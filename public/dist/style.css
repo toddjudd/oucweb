@@ -1,16 +1,10 @@
-@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto);@charset "UTF-8";
 html {
   font-size: 10px; }
 
 body {
   background: #262161;
   background: #efefef; }
-  body:before {
-    content: '';
-    display: block;
-    background: linear-gradient(90deg, #48ded4 0%, #a026bf 20%, #e82c75 60%, #FFC40E 85%, #48ded4 95%);
-    height: 10px;
-    width: 100%; }
 
 .inner {
   max-width: 900px;
@@ -433,8 +427,7 @@ template {
   display: none; }
 
 @font-face {
-  font-family: 'panama';
-  src: url("/fonts/panama-bold-webfont.woff2") format("woff2"), url("/fonts/panama-bold-webfont.woff") format("woff");
+  font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-style: normal; }
 
@@ -606,7 +599,7 @@ label {
   padding: 0;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  background: #303030; }
+  background: #47413C; }
   .nav__section {
     display: -ms-flexbox;
     display: flex; }
@@ -617,7 +610,7 @@ label {
     display: -ms-flexbox;
     display: flex; }
   .nav__link {
-    background: #303030;
+    background: #47413C;
     color: white;
     border-right: 1px solid rgba(255, 255, 255, 0.1);
     text-transform: uppercase;
@@ -641,16 +634,20 @@ label {
     .nav__link:hover, .nav__link--active {
       border-bottom-color: rgba(0, 0, 0, 0.2);
       border-right-color: rgba(0, 0, 0, 0.05);
-      background: linear-gradient(90deg, #48ded4 0%, #a026bf 20%, #e82c75 60%, #FFC40E 85%, #48ded4 95%) fixed; }
+      background: #554e48 fixed; }
       .nav__link:hover svg, .nav__link--active svg {
         -ms-transform: scale(1.2);
             transform: scale(1.2); }
-    .nav__link--logo:hover svg {
-      -ms-transform: none;
-          transform: none; }
-    .nav__link--logo svg {
-      width: 200px;
-      margin: 0; }
+    .nav__link--logo {
+      background: #54942E fixed; }
+      .nav__link--logo:hover {
+        background: #54942E fixed; }
+        .nav__link--logo:hover svg {
+          -ms-transform: none;
+              transform: none; }
+      .nav__link--logo svg {
+        width: 150px;
+        margin: 0; }
 
 @media all and (max-width: 1200px) {
   .nav__link {
